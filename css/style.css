@@ -52,7 +52,7 @@ body {
 	margin-left: 20%;
 }
 .nav_link {
-	margin-left: 0.8vw;
+	margin-left: 1vw;
 	color: black;
 	text-decoration: none;
 	transition: color 0.2s linear;
@@ -62,32 +62,109 @@ body {
 }
 
 /*Blocks*/
+
+/*First block*/
 .firstBlock {
 	width: 100%;
 	height: 300px;
 	background-color: #f26522;
+	position: relative;
+	font-size: 25px;
 }
 .firstBlockCont {
+	position: absolute;
 	max-width: 1200px;
 	margin-top: 0;
-	margin-right: 15%;
+	margin-right: 25%;
 	margin-bottom: 0;
-	margin-left: 15%;
-	height: 50px;
+	margin-left: 25%;
+	height: 100%;
 	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	color: #fff;
+}
+.firstImg {
+	width: 30%;
+	height: 70%;
+	position: absolute;
+	bottom: 0;
+	left: 2%;
+}
+.secondImg {
+	width: 60%;
+	height: 70%;
+	position: absolute;
+	bottom: 0;
+	right: -15%;
+}
+.firstBlockForm {
+	width: 65%;
+	height: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 50%;
+	outline: 8px solid #793412;
+}
+.inpText {
+	width: 70%;
+	height: 100%;
+}
+.inpTextButt {
+	width: 30%;
+	height: 100%;
+	font-size: 1vw;
+	color: #fff;
+	background-color: #f26522; 
 }
 
 
+/*Second block*/
+.secondBlock {
+	width: 100%;
+	height: 300px;
+	background-color: #fff;
+	font-size: 25px;
+}
+.secondBlockCont {
+	max-width: 1200px;
+	margin-top: 0;
+	margin-right: 25%;
+	margin-bottom: 0;
+	margin-left: 25%;
+	height: 100%;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+
+/*Adaptability. Responsiveness*/
 @media (max-width: 1140px) {
 	
 }
 @media (max-width: 960px) {
-
+ .firstBlock {
+ 	height: 200px;
+ }
+ .firstBlockCont h1 {
+ 	font-size: 80%;
+ }
+ .firstBlockCont h6 {
+ 	font-size: 60%;
+ }
 }
 @media (max-width: 375) {
 
 }
+/*Footer*/
 
 footer {
 	background-color: #1e1e1e;
